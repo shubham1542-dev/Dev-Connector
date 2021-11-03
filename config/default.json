@@ -1,0 +1,5 @@
+{"mongoURI" : "mongodb+srv://chitkara:chitkara123@learningprojects.tjpvn.mongodb.net/Dev-connector?retryWrites=true&w=majority",
+
+"jwtSecret":"sjdijf1146",
+"githubClientId":"03b037b1adf31469b222",
+"githubSecret":"8ae97cf5e003cc16285f7f1932d229956c7fd3c7 "}
