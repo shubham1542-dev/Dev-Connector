@@ -87,6 +87,7 @@ router.post(
 
     //   Build social object
     profileFields.social = {};
+
     if (youtube) profileFields.social.youtube = youtube;
     if (twitter) profileFields.social.twitter = twitter;
     if (facebook) profileFields.social.facebook = facebook;
@@ -391,7 +392,7 @@ router.get("/github/:username", async (req, res) => {
       if (error) console.log(error);
 
       if (response.statusCode !== 200)
-        res.status(404).json({ msg: "No Github profile found !" });
+        return res.status(404).json({ msg: "No Github profile found !" });
 
       res.json(JSON.parse(body));
     });
